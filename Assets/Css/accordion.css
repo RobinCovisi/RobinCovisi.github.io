@@ -1,0 +1,59 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.accordion {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: rgb(233, 225, 240);
+    transition: .25s;
+}
+.accordion .content {
+    display: none;
+}
+
+
+.accordion:after{
+content: "";
+display: inline-block;
+width: 1.5rem;
+height: 1.5rem;
+background-repeat: no-repeat;
+background-size: contain;
+background-image: url(../Imagens/Group\ 482297\ \(1\).svg);
+transition: .25s;
+}
+.accordion.open {
+background-color: blueviolet;
+border-color: blueviolet;
+}
+.accordion:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+.accordion.open .accordion::after{
+transform: rotate(180deg);
+}
+.accordion.open .content {
+    display: inline-block;
+}
+
+.content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    background-color: blueviolet;
+    border-color: blueviolet;
+    border-radius: 0 0 1rem 1rem;
+    
+}

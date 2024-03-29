@@ -1,0 +1,69 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .fotocapa {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.contato p {
+    margin: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+    .contato p::before {
+        content: '';
+        width: 19px;
+        display: inline-flex;
+        height: 19px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: .5rem;
+    }
+
+    .contato .job::before {
+        background-image: url(../Imagens/Group\ \(1\).svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: .5rem;
+    }
+    .contato .location::before {
+        background-image: url(../Imagens/Vector\ \(1\).svg);  
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: .5rem; 
+    }
+    .contato .cell::before {
+        background-image: url(../Imagens/Vector.svg); 
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: .5rem;
+    }
+    .contato .email::before {
+        background-image: url(../Imagens/Group.svg); 
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: .5rem;
+    }
+
+
+.bemvindo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
